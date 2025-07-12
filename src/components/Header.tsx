@@ -17,7 +17,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>+30 210 1234567</span>
+              <span>6976846526</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
@@ -32,9 +32,16 @@ const Header = () => {
 
         {/* Main navigation */}
         <nav className="flex items-center justify-between py-4">
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">Λάμδα Τεχνική</h1>
-            <span className="ml-2 text-sm text-muted-foreground">Υδραυλικές Εργασίες</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
+              alt="Λάμδα Τεχνική Logo" 
+              className="h-12 w-12 object-contain"
+            />
+            <div>
+              <h1 className="text-2xl font-bold text-primary">Λάμδα Τεχνική</h1>
+              <span className="text-sm text-muted-foreground">365 μέρες 24 ώρες υδραυλικός</span>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

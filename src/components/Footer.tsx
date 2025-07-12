@@ -38,11 +38,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <Wrench className="h-8 w-8" />
+            <div className="flex items-center gap-3 mb-6">
+              <img 
+                src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
+                alt="Λάμδα Τεχνική Logo" 
+                className="h-12 w-12 object-contain"
+              />
               <div>
                 <h3 className="text-2xl font-bold">Λάμδα Τεχνική</h3>
-                <p className="text-primary-foreground/80">Υδραυλικές Εργασίες</p>
+                <p className="text-primary-foreground/80">365 μέρες 24 ώρες υδραυλικός</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
@@ -101,7 +105,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-0.5 text-accent" />
                 <div>
-                  <p className="font-medium">+30 210 1234567</p>
+                  <p className="font-medium">6976846526</p>
                   <p className="text-sm text-primary-foreground/80">24/7 Επείγουσα</p>
                 </div>
               </div>

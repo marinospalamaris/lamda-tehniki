@@ -18,8 +18,7 @@ const Contact = () => {
       icon: <Phone className="h-6 w-6" />,
       title: "Τηλέφωνο",
       details: [
-        "+30 210 1234567",
-        "+30 693 1234567"
+        "6976846526"
       ],
       note: "24/7 για επείγουσες περιπτώσεις"
     },
@@ -179,7 +178,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="text-2xl font-bold">
-              📞 +30 210 1234567
+              📞 6976846526
             </div>
             <Button variant="accent" size="lg">
               <Phone className="mr-2 h-5 w-5" />
