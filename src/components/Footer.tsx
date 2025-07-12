@@ -42,7 +42,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
                 alt="Λάμδα Τεχνική Logo" 
-                className="h-12 w-12 object-contain"
+                className="h-16 w-16 object-contain"
               />
               <div>
                 <h3 className="text-2xl font-bold">Λάμδα Τεχνική</h3>
