@@ -17,7 +17,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>6976846526</span>
+              <a href="tel:6976846526" className="hover:text-primary transition-colors">6976846526</a>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
               alt="Λάμδα Τεχνική Logo" 
-              className="h-16 w-16 object-contain"
+              className="h-24 w-24 object-contain"
             />
             <div>
               <h1 className="text-2xl font-bold text-primary">Λάμδα Τεχνική</h1>

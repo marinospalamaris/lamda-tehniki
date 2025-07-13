@@ -42,7 +42,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
                 alt="Λάμδα Τεχνική Logo" 
-                className="h-16 w-16 object-contain"
+                className="h-20 w-20 object-contain"
               />
               <div>
                 <h3 className="text-2xl font-bold">Λάμδα Τεχνική</h3>
@@ -105,7 +105,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-0.5 text-accent" />
                 <div>
-                  <p className="font-medium">6976846526</p>
+                  <a href="tel:6976846526" className="font-medium hover:text-accent transition-colors">6976846526</a>
                   <p className="text-sm text-primary-foreground/80">24/7 Επείγουσα</p>
                 </div>
               </div>
