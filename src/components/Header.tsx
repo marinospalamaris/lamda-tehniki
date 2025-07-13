@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <MapPin className="h-4 w-4" />
-            <span>Αθήνα, Ελλάδα</span>
+            <span>Πειραιάς & Γύρω Περιοχές</span>
           </div>
         </div>
 

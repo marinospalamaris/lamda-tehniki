@@ -50,8 +50,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Ο Μιχάλλης Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
-              υδραυλικές υπηρεσίες με 20+ χρόνια εμπειρίας στην Αθήνα.
+              Ο Μιχάλης Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
+              υδραυλικές υπηρεσίες με 20+ χρόνια εμπειρίας στον Πειραιά.
             </p>
             <div className="flex gap-4">
               <a 
@@ -121,7 +121,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 text-accent" />
                 <div>
-                  <p className="font-medium">Αθήνα & Πειραιάς</p>
+                  <p className="font-medium">Πειραιάς & Γύρω Περιοχές</p>
                   <p className="text-sm text-primary-foreground/80">Ευρύτερη Αττική</p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-primary-foreground/80">
-                © {currentYear} Λάμδα Τεχνική - Μιχάλλης Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
+                © {currentYear} Λάμδα Τεχνική - Μιχάλης Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
               </p>
             </div>
             <div className="text-center md:text-right">
