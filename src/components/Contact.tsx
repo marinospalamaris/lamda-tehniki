@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Map from "./Map";
 import { 
   Phone, 
   Mail, 
@@ -46,7 +47,6 @@ const Contact = () => {
     }
   ];
 
-
   return (
     <section id="contact" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -61,9 +61,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 max-w-6xl mx-auto">
           {/* Contact Information */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="space-y-6">
             {contactInfo.map((info, index) => (
               <Card key={index} className="hover:shadow-medium transition-all duration-300">
                 <CardHeader className="pb-3">
@@ -88,6 +88,20 @@ const Contact = () => {
             ))}
           </div>
 
+          {/* Map */}
+          <div className="space-y-6">
+            <Card className="overflow-hidden">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <MapPin className="h-6 w-6 text-primary" />
+                  Περιοχή Εξυπηρέτησης
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <Map />
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Emergency Contact */}

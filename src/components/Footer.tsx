@@ -45,7 +45,7 @@ const Footer = () => {
                 className="h-20 w-20 object-contain"
               />
               <div>
-                <h3 className="text-2xl font-bold">Λάμδα Τεχνική</h3>
+                <h3 className="text-2xl font-bold text-white">Λάμδα Τεχνική</h3>
                 <p className="text-primary-foreground/80">365 μέρες 24 ώρες υδραυλικός</p>
               </div>
             </div>
