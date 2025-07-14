@@ -39,7 +39,7 @@ const Header = () => {
               className="h-24 w-24 object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold text-black">Λάμδα Τεχνική</h1>
+              <h1 className="text-2xl font-bold text-black">Lamda Tehniki</h1>
               <span className="text-sm text-muted-foreground">365 μέρες 24 ώρες υδραυλικός</span>
             </div>
           </div>

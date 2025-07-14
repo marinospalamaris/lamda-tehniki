@@ -76,7 +76,7 @@ const Contact = () => {
                   <div className="space-y-1 mb-3">
                     {info.details.map((detail, detailIndex) => (
                       info.title === "Τηλέφωνο" ? (
-                        <a key={detailIndex} href={`tel:${detail}`} className="font-medium hover:text-primary transition-colors">{detail}</a>
+                       <a key={detailIndex} href={`tel:${detail}`} className="font-medium hover:text-primary transition-colors">{detail}</a>
                       ) : (
                         <p key={detailIndex} className="font-medium">{detail}</p>
                       )

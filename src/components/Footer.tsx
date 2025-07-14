@@ -45,12 +45,12 @@ const Footer = () => {
                 className="h-20 w-20 object-contain"
               />
               <div>
-                <h3 className="text-2xl font-bold text-white">Λάμδα Τεχνική</h3>
+                <h3 className="text-2xl font-bold text-white">Lamda Tehniki</h3>
                 <p className="text-primary-foreground/80">365 μέρες 24 ώρες υδραυλικός</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Ο Μιχάλης Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
+              Ο Μιχάλης Λ. Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
               υδραυλικές υπηρεσίες με 20+ χρόνια εμπειρίας στον Πειραιά.
             </p>
             <div className="flex gap-4">
@@ -134,7 +134,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-primary-foreground/80">
-                © {currentYear} Λάμδα Τεχνική - Μιχάλης Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
+                © {currentYear} Lamda Tehniki - Μιχάλης Λ. Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
               </p>
             </div>
             <div className="text-center md:text-right">
