@@ -100,7 +100,7 @@ const Services = () => {
                 Καλέστε μας τώρα για επείγουσα υδραυλική υποστήριξη 24/7
               </p>
               <div className="text-3xl font-bold">
-                📞 +30 210 1234567
+                <a href="tel:6976846526" className="hover:text-accent transition-colors">📞 6976846526</a>
               </div>
             </CardContent>
           </Card>

@@ -46,7 +46,7 @@ const About = () => {
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">Σχετικά με Εμάς</Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Μιχάλλης Λοκόσης
+            Μιχάλης Λοκόσης
           </h2>
           <h3 className="text-2xl text-primary mb-8">Πιστοποιημένος Υδραυλικός</h3>
         </div>
@@ -56,7 +56,7 @@ const About = () => {
             <div className="bg-gradient-primary rounded-lg p-8 text-primary-foreground mb-8">
               <h3 className="text-2xl font-bold mb-4">Η Εμπειρία μας</h3>
               <p className="text-lg leading-relaxed">
-                Με περισσότερα από 20 χρόνια στον χώρο των υδραυλικών, ο Μιχάλλης Λοκόσης 
+                Με περισσότερα από 20 χρόνια στον χώρο των υδραυλικών, ο Μιχάλης Λοκόσης 
                 και η Λάμδα Τεχνική έχουν εδραιωθεί ως μια από τις πιο αξιόπιστες εταιρείες 
                 υδραυλικών υπηρεσιών στην Αθήνα.
               </p>
