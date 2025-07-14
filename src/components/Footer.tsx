@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Ο Μιχάλης Λ. Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
+              Ο Μιχάλης Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
               υδραυλικές υπηρεσίες με 20+ χρόνια εμπειρίας στον Πειραιά.
             </p>
             <div className="flex gap-4">
@@ -120,9 +120,23 @@ const Footer = () => {
               
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 text-accent" />
-                <div>
-                  <p className="font-medium">Πειραιάς & Γύρω Περιοχές</p>
-                  <p className="text-sm text-primary-foreground/80">Ευρύτερη Αττική</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-block bg-accent/20 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium animate-fade-in">
+                      Περιοχές Εξυπηρέτησης
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-block bg-primary-foreground/10 text-primary-foreground px-2 py-1 rounded text-xs hover-scale transition-all duration-300">
+                      Πειραιάς & Γύρω Περιοχές
+                    </span>
+                    <span className="inline-block bg-primary-foreground/10 text-primary-foreground px-2 py-1 rounded text-xs hover-scale transition-all duration-300">
+                      Ευρύτερη Αττική
+                    </span>
+                    <span className="inline-block bg-accent/30 text-accent-foreground px-2 py-1 rounded text-xs font-medium hover-scale transition-all duration-300">
+                      Άμεση εξυπηρέτηση
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,7 +148,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-primary-foreground/80">
-                © {currentYear} Lamda Tehniki - Μιχάλης Λ. Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
+                © {currentYear} Lamda Tehniki - Μιχάλης Λοκόσης. Όλα τα δικαιώματα διατηρούνται.
               </p>
             </div>
             <div className="text-center md:text-right">
