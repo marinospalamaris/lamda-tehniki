@@ -32,6 +32,21 @@ const Map = () => {
       name: 'Μοσχάτο', 
       isMain: false,
       description: 'Περιοχή εξυπηρέτησης'
+    },
+    { 
+      name: 'Κορυδαλλός', 
+      isMain: false,
+      description: 'Περιοχή εξυπηρέτησης'
+    },
+    { 
+      name: 'Πέραμα', 
+      isMain: false,
+      description: 'Περιοχή εξυπηρέτησης'
+    },
+    { 
+      name: 'Νέο Φάληρο', 
+      isMain: false,
+      description: 'Περιοχή εξυπηρέτησης'
     }
   ];
 
