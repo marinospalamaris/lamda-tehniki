@@ -11,7 +11,12 @@ const Map = () => {
   const [token, setToken] = useState('');
   const [isTokenSet, setIsTokenSet] = useState(false);
 
-  const serviceAreas = [
+  const serviceAreas: Array<{
+    name: string;
+    coordinates: [number, number];
+    isMain: boolean;
+    description: string;
+  }> = [
     { 
       name: 'Πειραιάς', 
       coordinates: [23.6345, 37.9395], 
@@ -114,9 +119,9 @@ const Map = () => {
 
       // Add coverage area polygon
       const coverageArea = {
-        type: 'Feature',
+        type: 'Feature' as const,
         geometry: {
-          type: 'Polygon',
+          type: 'Polygon' as const,
           coordinates: [[
             [23.5800, 37.9200], // Southwest
             [23.7200, 37.9200], // Southeast
@@ -124,7 +129,8 @@ const Map = () => {
             [23.5800, 37.9800], // Northwest
             [23.5800, 37.9200]  // Close polygon
           ]]
-        }
+        },
+        properties: {}
       };
 
       map.current?.addSource('coverage-area', {
