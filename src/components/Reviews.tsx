@@ -121,16 +121,21 @@ const Reviews = () => {
 
         {/* Google Reviews CTA */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 bg-card/80 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50">
+          <a 
+            href="https://g.co/kgs/pZn24wQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-card/80 backdrop-blur-sm px-6 py-3 rounded-full border border-border/50 hover:bg-card hover:shadow-lg transition-all duration-300 group"
+          >
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" 
               alt="Google" 
               className="h-5 w-5" 
             />
-            <span className="text-sm text-muted-foreground">
+            <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
               Δείτε όλες τις αξιολογήσεις μας στο Google Business Profile
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </section>
