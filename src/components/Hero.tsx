@@ -48,7 +48,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               onClick={() => scrollToSection('services')}
-              className="text-lg border-white text-white hover:bg-white hover:text-primary"
+              className="text-lg border-white text-white bg-transparent hover:bg-white hover:text-primary"
             >
               Δείτε τις Υπηρεσίες μας
             </Button>
