@@ -76,7 +76,7 @@ const Contact = () => {
                   <div className="space-y-1 mb-3">
                     {info.details.map((detail, detailIndex) => (
                       info.title === "Τηλέφωνο" ? (
-                       <a key={detailIndex} href={`tel:${detail}`} className="font-medium hover:text-primary transition-colors">{detail}</a>
+                       <a key={detailIndex} href="tel:+30-697-684-6526" className="font-medium hover:text-primary transition-colors">697 684 6526</a>
                       ) : (
                         <p key={detailIndex} className="font-medium">{detail}</p>
                       )
@@ -112,9 +112,9 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="text-2xl font-bold">
-              <a href="tel:6976846526" className="hover:text-accent transition-colors">📞 6976846526</a>
+              <a href="tel:+30-697-684-6526" className="hover:text-accent transition-colors">📞 697 684 6526</a>
             </div>
-            <Button variant="accent" size="lg" onClick={() => window.open("tel:6976846526")}>
+            <Button variant="accent" size="lg" onClick={() => window.open("tel:+30-697-684-6526")}>
               <Phone className="mr-2 h-5 w-5" />
               Κλήση Τώρα
             </Button>
