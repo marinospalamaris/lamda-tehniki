@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover-foreground: 210 40% 8%;
 
     /* Professional blue theme for plumbing business */
-    --primary: 210 100% 45%;
+    --primary: 210 100% 35%;
     --primary-foreground: 0 0% 100%;
     --primary-light: 210 100% 55%;
-    --primary-dark: 210 100% 35%;
+    --primary-dark: 210 100% 25%;
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 210 40% 8%;
@@ -37,17 +37,17 @@ All colors MUST be HSL.
 
     --border: 210 20% 90%;
     --input: 210 20% 90%;
-    --ring: 210 100% 45%;
+    --ring: 210 100% 35%;
 
     /* Professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 45%), hsl(210 80% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 35%), hsl(210 100% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 35%), hsl(210 80% 60%));
     --gradient-accent: linear-gradient(90deg, hsl(45 100% 70%), hsl(45 90% 80%));
 
     /* Professional shadows */
-    --shadow-soft: 0 4px 20px hsl(210 100% 45% / 0.1);
-    --shadow-medium: 0 8px 30px hsl(210 100% 45% / 0.15);
-    --shadow-strong: 0 20px 60px hsl(210 100% 45% / 0.2);
+    --shadow-soft: 0 4px 20px hsl(210 100% 35% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(210 100% 35% / 0.15);
+    --shadow-strong: 0 20px 60px hsl(210 100% 35% / 0.2);
 
     --radius: 0.5rem;
 
