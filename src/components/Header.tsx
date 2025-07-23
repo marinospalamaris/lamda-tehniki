@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/87bcc0c1-e893-4b55-a7eb-ba82fda75ade.png" 
               alt="Λάμδα Τεχνική Logo" 
-              className="h-16 w-16 md:h-24 md:w-24 object-contain"
+              className="h-21 w-21 md:h-32 md:w-32 object-contain"
             />
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-black">Lamda Tehniki</h1>
