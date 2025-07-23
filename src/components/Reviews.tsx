@@ -1,13 +1,16 @@
 import { Star, User } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import profile1 from "@/assets/profile-1.jpg";
-import profile2 from "@/assets/profile-2.jpg";
-import profile3 from "@/assets/profile-3.jpg";
-import profile4 from "@/assets/profile-4.jpg";
-import profile5 from "@/assets/profile-5.jpg";
-import profile6 from "@/assets/profile-6.jpg";
 
 const Reviews = () => {
+  const profileImages = [
+    "/src/assets/profile-1.jpg",
+    "/src/assets/profile-2.jpg", 
+    "/src/assets/profile-3.jpg",
+    "/src/assets/profile-4.jpg",
+    "/src/assets/profile-5.jpg",
+    "/src/assets/profile-6.jpg"
+  ];
+
   const reviews = [
     {
       id: 1,
@@ -15,7 +18,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 1 μήνα",
       review: "Best Service in Town! You know that myth in Greece about never being able to find a good, trustworthy plumber? Well, that myth just got busted! Μιχάλης and his team provided exceptional service with professionalism and reliability.",
-      avatar: profile1,
+      avatar: profileImages[0],
     },
     {
       id: 2,
@@ -23,7 +26,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 1 χρόνο",
       review: "I have make appointment with Mr Michael at Sunday, He will arrived directly, 30min he is arrived, and help me fix the water heating, it is very good, very professional, I will come back when I need help again!",
-      avatar: profile2,
+      avatar: profileImages[1],
     },
     {
       id: 3,
@@ -31,7 +34,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 2 εβδομάδες", 
       review: "Εξαιρετική εξυπηρέτηση και άμεση ανταπόκριση! Ο Μιχάλης ήρθε την ίδια μέρα που τον καλέσαμε και έλυσε το πρόβλημα με τη θέρμανση πολύ γρήγορα. Πολύ επαγγελματίας!",
-      avatar: profile3,
+      avatar: profileImages[2],
     },
     {
       id: 4,
@@ -39,7 +42,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 3 μήνες",
       review: "Άριστη δουλειά στην εγκατάσταση του νέου μου λέβητα. Οι τιμές είναι πολύ καλές και η ποιότητα των υλικών εξαιρετική. Σίγουρα θα τον προτείνω!",
-      avatar: profile4,
+      avatar: profileImages[3],
     },
     {
       id: 5,
@@ -47,7 +50,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 2 μήνες",
       review: "Πολύ γρήγορη εξυπηρέτηση για επείγον θέμα με τους σωλήνες. Ήρθε σε μισή ώρα και το έφτιαξε αμέσως. Πολύ ευγενικός και εξηγεί τι κάνει.",
-      avatar: profile5,
+      avatar: profileImages[4],
     },
     {
       id: 6,
@@ -55,7 +58,7 @@ const Reviews = () => {
       rating: 5,
       timeAgo: "πριν από 1 μήνα",
       review: "Εξαιρετική τιμή για την εγκατάσταση ηλιακού θερμοσίφωνα. Ο Μιχάλης με συμβούλεψε για το καλύτερο μοντέλο για τις ανάγκες μου. Πολύ ικανοποιημένος!",
-      avatar: profile6,
+      avatar: profileImages[5],
     }
   ];
 
@@ -107,11 +110,7 @@ const Reviews = () => {
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="h-10 w-10 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center">
-                    <img 
-                      src={review.avatar} 
-                      alt={`${review.name} profile`}
-                      className="h-full w-full object-cover"
-                    />
+                    <User className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
