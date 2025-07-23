@@ -137,15 +137,27 @@ const Reviews = () => {
             </span>
           </a>
           
-          <div className="mt-6">
+          <div className="mt-8">
             <a 
-              href="https://www.google.com/search?num=10&sca_esv=53a7f9f69fe1adbf&sxsrf=AE3TifNHTWd3UHv4yLwdNbzUBs-DOki3Kw:1753263333263&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E92PPxS8j4l2SLI8fccTB6Eq1XOOvWP74XFMvKlJHTSodNeLRhNEtmhl4ofVuw7AfSgheesFEKyVWbEcD0BrdFLZFYX3DOE3yEJwv6C3K7cLUEpDFSRZ6oJe5HBVaX_3k2oppQlS3Wmm-5ZUskM77QY1YT4nCUICENJaJfseBY0AZVnnUxpqPhtDaQgmOueRNMfafxUM5t73hJ8mlR0JFBj_iHjA&q=Lamda+Tehniki+%7C+%CE%A5%CE%B4%CF%81%CE%B1%CF%85%CE%BB%CE%B9%CE%BA%CE%AC+%CE%91%CF%80%CE%BF%CF%87%CE%AD%CF%84%CE%B5%CF%85%CF%83%CE%B7+%CE%98%CE%AD%CF%81%CE%BC%CE%B1%CE%BD%CF%83%CE%B7+%7C+%CE%A0%CE%B5%CE%B9%CF%81%CE%B1%CE%B9%CE%AC%CF%82+%CE%9A%CF%81%CE%B9%CF%84%CE%B9%CE%BA%CE%AD%CF%82&sa=X&ved=2ahUKEwjT7rTx1tKOAxUeR_EDHdP1MaIQ0bkNegQIORAD&biw=2195&bih=1066&dpr=1.75"
+              href="https://reviewthis.biz/lammdatehniki"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 font-semibold"
+              className="relative inline-flex items-center gap-3 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-10 py-4 rounded-2xl hover:shadow-2xl hover:shadow-primary/25 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 font-bold text-lg group overflow-hidden"
             >
-              <Star className="h-5 w-5 fill-current" />
-              <span>Αφήστε την αξιολόγησή σας στο Google</span>
+              {/* Animated background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Content */}
+              <div className="relative flex items-center gap-3">
+                <Star className="h-6 w-6 fill-current group-hover:animate-pulse" />
+                <span className="relative">
+                  Αφήστε την αξιολόγησή σας στο Google
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-foreground/50 group-hover:w-full transition-all duration-300"></div>
+                </span>
+              </div>
+              
+              {/* Glow effect */}
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary/50 to-primary/30 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 -z-10"></div>
             </a>
           </div>
         </div>
