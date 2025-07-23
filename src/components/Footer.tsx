@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/lovable-uploads/15c342f7-221e-4962-b976-c0d14f985b2a.png" 
+                src="/lovable-uploads/87bcc0c1-e893-4b55-a7eb-ba82fda75ade.png" 
                 alt="Λάμδα Τεχνική Logo" 
                 className="h-20 w-20 object-contain"
               />
