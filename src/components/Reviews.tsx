@@ -1,14 +1,20 @@
 import { Star, User } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import profile1 from "@/assets/profile-1.jpg";
+import profile2 from "@/assets/profile-2.jpg";
+import profile3 from "@/assets/profile-3.jpg";
+import profile4 from "@/assets/profile-4.jpg";
+import profile5 from "@/assets/profile-5.jpg";
+import profile6 from "@/assets/profile-6.jpg";
 
 const Reviews = () => {
   const profileImages = [
-    "/src/assets/profile-1.jpg",
-    "/src/assets/profile-2.jpg", 
-    "/src/assets/profile-3.jpg",
-    "/src/assets/profile-4.jpg",
-    "/src/assets/profile-5.jpg",
-    "/src/assets/profile-6.jpg"
+    profile1,
+    profile2, 
+    profile3,
+    profile4,
+    profile5,
+    profile6
   ];
 
   const reviews = [
@@ -110,7 +116,16 @@ const Reviews = () => {
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="h-10 w-10 rounded-full overflow-hidden bg-primary/10 flex items-center justify-center">
-                    <User className="h-5 w-5 text-primary" />
+                    <img 
+                      src={review.avatar} 
+                      alt={`${review.name} profile`}
+                      className="h-full w-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                    <User className="h-5 w-5 text-primary hidden" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
