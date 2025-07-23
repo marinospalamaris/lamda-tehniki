@@ -47,6 +47,11 @@ const Map = () => {
       name: 'Νέο Φάληρο', 
       isMain: false,
       description: 'Περιοχή εξυπηρέτησης'
+    },
+    { 
+      name: 'Αιγάλεω', 
+      isMain: false,
+      description: 'Περιοχή εξυπηρέτησης'
     }
   ];
 
