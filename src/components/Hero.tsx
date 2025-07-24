@@ -1,6 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Phone, Award, Clock, Shield } from "lucide-react";
+import heroImage from "@/assets/hero-plumbing.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/lovable-uploads/091d75ba-ea97-41c4-870f-367709edf8a7.png)` }}
+        style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-primary/20 backdrop-blur-[1px]" />
       </div>
