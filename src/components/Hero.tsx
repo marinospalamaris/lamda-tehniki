@@ -23,7 +23,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl">
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Επαγγελματικές
             <span className="bg-gradient-accent bg-clip-text text-transparent block">
               Υδραυλικές Εργασίες
