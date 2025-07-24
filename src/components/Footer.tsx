@@ -129,9 +129,6 @@ const Footer = () => {
                     <span className="inline-block bg-primary-foreground/10 text-primary-foreground px-2 py-1 rounded text-xs hover-scale transition-all duration-300">
                       Πειραιάς & Γύρω Περιοχές
                     </span>
-                    <span className="inline-block bg-primary-foreground/10 text-primary-foreground px-2 py-1 rounded text-xs hover-scale transition-all duration-300">
-                      Αιγάλεω
-                    </span>
                     <span className="inline-block bg-accent/30 text-accent-foreground px-2 py-1 rounded text-xs font-medium hover-scale transition-all duration-300">
                       Άμεση εξυπηρέτηση
                     </span>
