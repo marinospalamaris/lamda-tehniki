@@ -34,28 +34,16 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Logo for mobile - below contact info */}
-        <div className="flex justify-center py-3 md:hidden">
-          <img 
-            src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
-            alt="Λάμδα Τεχνική Logo" 
-            className="h-20 w-20 object-contain"
-          />
-        </div>
-
         {/* Main navigation */}
         <nav className="flex items-center justify-between py-4">
-          {/* Desktop logo */}
-          <div className="hidden md:flex items-center">
+          {/* Logo - mobile and desktop */}
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
               alt="Λάμδα Τεχνική Logo" 
-              className="h-21 w-21 md:h-32 md:w-32 object-contain"
+              className="h-24 w-24 md:h-32 md:w-32 object-contain"
             />
           </div>
-          
-          {/* Mobile spacer to center menu button */}
-          <div className="flex-1 md:hidden"></div>
           
           <div className="hidden lg:flex items-center space-x-8">
             <button 
