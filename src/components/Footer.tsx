@@ -37,11 +37,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center">
+            <div className="flex items-center mb-6">
               <img 
                 src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
                 alt="Λάμδα Τεχνική Logo" 
-                className="h-16 w-16 object-contain"
+                className="h-20 w-20 object-contain"
               />
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
