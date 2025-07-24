@@ -17,20 +17,20 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 40% 8%;
 
-    /* Professional blue theme for plumbing business */
-    --primary: 210 100% 35%;
+    /* Professional blue theme with custom colors */
+    --primary: 214 100% 22%; /* #021F70 converted to HSL */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 210 100% 55%;
-    --primary-dark: 210 100% 25%;
+    --primary-light: 207 100% 83%; /* #A7DEFF converted to HSL */
+    --primary-dark: 214 100% 22%;
 
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 210 40% 8%;
+    --secondary: 207 100% 83%; /* #A7DEFF for secondary */
+    --secondary-foreground: 214 100% 22%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 210 20% 45%;
 
-    --accent: 45 100% 70%;
-    --accent-foreground: 210 40% 8%;
+    --accent: 207 100% 83%; /* #A7DEFF for accent */
+    --accent-foreground: 214 100% 22%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -39,15 +39,15 @@ All colors MUST be HSL.
     --input: 210 20% 90%;
     --ring: 210 100% 35%;
 
-    /* Professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 35%), hsl(210 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 35%), hsl(210 80% 60%));
-    --gradient-accent: linear-gradient(90deg, hsl(45 100% 70%), hsl(45 90% 80%));
+    /* Professional gradients with new colors */
+    --gradient-primary: linear-gradient(135deg, hsl(214 100% 22%), hsl(207 100% 83%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 22%), hsl(207 100% 83%));
+    --gradient-accent: linear-gradient(90deg, hsl(207 100% 83%), hsl(207 90% 88%));
 
-    /* Professional shadows */
-    --shadow-soft: 0 4px 20px hsl(210 100% 35% / 0.1);
-    --shadow-medium: 0 8px 30px hsl(210 100% 35% / 0.15);
-    --shadow-strong: 0 20px 60px hsl(210 100% 35% / 0.2);
+    /* Professional shadows with new primary color */
+    --shadow-soft: 0 4px 20px hsl(214 100% 22% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(214 100% 22% / 0.15);
+    --shadow-strong: 0 20px 60px hsl(214 100% 22% / 0.2);
 
     --radius: 0.5rem;
 
@@ -78,19 +78,19 @@ All colors MUST be HSL.
     --popover: 210 30% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 55%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 210 100% 65%;
-    --primary-dark: 210 100% 45%;
+    --primary: 207 100% 83%; /* Lighter blue for dark mode */
+    --primary-foreground: 214 100% 22%;
+    --primary-light: 207 100% 88%;
+    --primary-dark: 207 100% 73%;
 
-    --secondary: 210 30% 15%;
+    --secondary: 214 100% 22%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 210 30% 15%;
     --muted-foreground: 210 15% 65%;
 
-    --accent: 45 100% 70%;
-    --accent-foreground: 210 40% 8%;
+    --accent: 207 100% 83%;
+    --accent-foreground: 214 100% 22%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;

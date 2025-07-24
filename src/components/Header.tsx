@@ -32,16 +32,12 @@ const Header = () => {
 
         {/* Main navigation */}
         <nav className="flex items-center justify-between py-4">
-          <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
               alt="Λάμδα Τεχνική Logo" 
               className="h-21 w-21 md:h-32 md:w-32 object-contain"
             />
-            <div>
-              <h1 className="text-lg md:text-2xl font-bold text-black">Lamda Tehniki</h1>
-              <span className="text-xs md:text-sm text-muted-foreground">365 μέρες 24 ώρες υδραυλικός</span>
-            </div>
           </div>
           
           <div className="hidden lg:flex items-center space-x-8">

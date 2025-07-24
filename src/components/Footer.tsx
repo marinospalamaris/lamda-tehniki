@@ -37,16 +37,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center">
               <img 
                 src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
                 alt="Λάμδα Τεχνική Logo" 
-                className="h-26 w-26 object-contain"
+                className="h-16 w-16 object-contain"
               />
-              <div>
-                <h3 className="text-2xl font-bold text-white">Lamda Tehniki</h3>
-                <p className="text-primary-foreground/80">365 μέρες 24 ώρες υδραυλικός</p>
-              </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
               Ο Μιχάλης Λοκόσης και η ομάδα μας προσφέρουν επαγγελματικές 
