@@ -123,7 +123,10 @@ const Header = () => {
               </button>
               <Button 
                 variant="hero"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  window.open("tel:+30-697-684-6526");
+                  setIsMobileMenuOpen(false);
+                }}
                 className="mt-4 w-full"
               >
                 <Phone className="mr-2 h-4 w-4" />
