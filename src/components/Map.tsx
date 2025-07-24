@@ -48,6 +48,11 @@ const Map = () => {
       isMain: false,
       description: 'Περιοχή εξυπηρέτησης'
     },
+    { 
+      name: 'Αιγάλεω', 
+      isMain: false,
+      description: 'Περιοχή εξυπηρέτησης'
+    },
   ];
 
   return (
