@@ -41,7 +41,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
               alt="Λάμδα Τεχνική Logo" 
-              className="h-29 w-29 md:h-38 md:w-38 object-contain"
+              className="h-28 w-28 md:h-36 md:w-36 object-contain"
             />
           </div>
           
