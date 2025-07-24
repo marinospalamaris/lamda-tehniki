@@ -41,7 +41,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
                 alt="Λάμδα Τεχνική Logo" 
-                className="h-24 w-24 md:h-28 md:w-28 object-contain"
+                className="h-32 w-32 md:h-36 md:w-36 object-contain"
               />
             </div>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
