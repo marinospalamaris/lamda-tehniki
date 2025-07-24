@@ -55,14 +55,27 @@ const About = () => {
           <div>
             {/* Profile Photo */}
             <div className="flex justify-center lg:justify-start mb-8">
-              <div className="relative">
-                <img 
-                  src="/lovable-uploads/788c4f42-eca4-4d15-9319-e6ddd9b5b69c.png" 
-                  alt="Μιχάλης Λοκόσης - Πιστοποιημένος Υδραυλικός" 
-                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-elegant border-4 border-white"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-3 shadow-lg">
-                  <Award className="h-6 w-6" />
+              <div className="relative group">
+                {/* Glowing background */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-3xl blur opacity-75 group-hover:opacity-100 animate-pulse"></div>
+                
+                {/* Main portrait */}
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/788c4f42-eca4-4d15-9319-e6ddd9b5b69c.png" 
+                    alt="Μιχάλης Λοκόσης - Πιστοποιημένος Υδραυλικός" 
+                    className="w-52 h-52 md:w-64 md:h-64 object-cover rounded-2xl shadow-2xl border-4 border-white relative z-10 transition-transform duration-300 group-hover:scale-105"
+                  />
+                  
+                  {/* Professional badge */}
+                  <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-primary to-accent text-white rounded-full p-4 shadow-2xl border-4 border-white z-20 animate-bounce-slow">
+                    <Award className="h-8 w-8" />
+                  </div>
+                  
+                  {/* Experience badge */}
+                  <div className="absolute -top-4 -left-4 bg-gradient-to-r from-accent to-primary text-white rounded-full px-4 py-2 shadow-xl border-2 border-white z-20">
+                    <span className="text-sm font-bold">20+ Χρόνια</span>
+                  </div>
                 </div>
               </div>
             </div>
