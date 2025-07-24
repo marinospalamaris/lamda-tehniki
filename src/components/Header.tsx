@@ -39,7 +39,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
             alt="Λάμδα Τεχνική Logo" 
-            className="h-16 w-16 object-contain"
+            className="h-20 w-20 object-contain"
           />
         </div>
 
@@ -85,15 +85,7 @@ const Header = () => {
           </div>
           
           {/* Mobile menu button */}
-          <div className="flex lg:hidden items-center gap-2">
-            <Button 
-              variant="hero" 
-              size="sm"
-              onClick={() => scrollToSection('contact')}
-              className="text-xs px-2 py-1"
-            >
-              Κλήση
-            </Button>
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-foreground hover:text-primary transition-colors"

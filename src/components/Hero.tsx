@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button 
               variant="hero" 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => window.open("tel:+30-697-684-6526")}
               className="text-lg"
             >
               <Phone className="mr-2 h-5 w-5" />
