@@ -34,7 +34,7 @@ const Header = () => {
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center gap-2 md:gap-3">
             <img 
-              src="/lovable-uploads/87bcc0c1-e893-4b55-a7eb-ba82fda75ade.png" 
+              src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
               alt="Λάμδα Τεχνική Logo" 
               className="h-21 w-21 md:h-32 md:w-32 object-contain"
             />
