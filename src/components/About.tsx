@@ -62,7 +62,7 @@ const About = () => {
                 {/* Main portrait */}
                 <div className="relative">
                   <img 
-                    src="/lovable-uploads/788c4f42-eca4-4d15-9319-e6ddd9b5b69c.png" 
+                    src="/lovable-uploads/1fe65568-c574-40d7-b22d-76d6dfa59928.png" 
                     alt="Μιχάλης Λοκόσης - Πιστοποιημένος Υδραυλικός" 
                     className="w-52 h-52 md:w-64 md:h-64 object-cover rounded-2xl shadow-2xl border-4 border-white relative z-10 transition-transform duration-300 group-hover:scale-105"
                   />
