@@ -53,6 +53,20 @@ const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
+            {/* Profile Photo */}
+            <div className="flex justify-center lg:justify-start mb-8">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/788c4f42-eca4-4d15-9319-e6ddd9b5b69c.png" 
+                  alt="Μιχάλης Λοκόσης - Πιστοποιημένος Υδραυλικός" 
+                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-elegant border-4 border-white"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-3 shadow-lg">
+                  <Award className="h-6 w-6" />
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-primary rounded-lg p-8 text-primary-foreground mb-8">
               <h3 className="text-2xl font-bold mb-4">Η Εμπειρία μας</h3>
               <p className="text-lg leading-relaxed">
