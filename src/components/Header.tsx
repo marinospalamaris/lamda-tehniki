@@ -41,7 +41,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/41708dc9-804f-40b6-980f-954881ccd499.png" 
               alt="Λάμδα Τεχνική Logo" 
-              className="h-28 w-28 md:h-36 md:w-36 object-contain"
+              className="h-31 w-31 md:h-40 md:w-40 object-contain"
             />
           </div>
           
@@ -78,7 +78,7 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-foreground hover:text-primary transition-colors"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
             </button>
           </div>
 
