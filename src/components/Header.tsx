@@ -1,11 +1,15 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false); // Close mobile menu after navigation
     }
   };
 
@@ -66,17 +70,75 @@ const Header = () => {
               Επικοινωνία
             </button>
           </div>
+          
+          {/* Mobile menu button */}
+          <div className="flex lg:hidden items-center gap-2">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => scrollToSection('contact')}
+              className="text-xs px-2 py-1"
+            >
+              Κλήση
+            </Button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-foreground hover:text-primary transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
 
+          {/* Desktop contact button */}
           <Button 
             variant="hero" 
             size="sm"
             onClick={() => scrollToSection('contact')}
-            className="text-xs md:text-sm px-2 md:px-4 py-1 md:py-2 whitespace-nowrap"
+            className="hidden lg:flex text-sm px-4 py-2 whitespace-nowrap"
           >
-            <span className="hidden sm:inline">Επικοινωνήστε Μαζί Μας</span>
-            <span className="sm:hidden">Επικοινωνία</span>
+            Επικοινωνήστε Μαζί Μας
           </Button>
         </nav>
+
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden border-t border-border/50 py-4 animate-fade-in">
+            <div className="flex flex-col space-y-4">
+              <button 
+                onClick={() => scrollToSection('home')}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Αρχική
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Υπηρεσίες
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Σχετικά
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Επικοινωνία
+              </button>
+              <Button 
+                variant="hero"
+                onClick={() => scrollToSection('contact')}
+                className="mt-4 w-full"
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                Επικοινωνήστε Μαζί Μας
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
