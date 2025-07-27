@@ -30,13 +30,13 @@ const FloatingContactButton = () => {
             variant="outline"
             size="sm"
             onClick={() => {
-              scrollToSection('contact');
+              window.open("sms:+3069768466526?body=Στείλτε%20το%20μηνυμά%20σας%20και%20θα%20σας%20καλέσουμε.");
               setIsExpanded(false);
             }}
             className="shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
           >
             <MessageCircle className="h-4 w-4 mr-2" />
-            Μήνυμα
+            Στείλτε το μήνυμά σας και θα σας καλέσουμε
           </Button>
         </div>
       )}
