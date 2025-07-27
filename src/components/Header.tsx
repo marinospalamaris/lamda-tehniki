@@ -86,7 +86,7 @@ const Header = () => {
           <Button 
             variant="hero" 
             size="sm"
-            onClick={() => scrollToSection('contact')}
+            onClick={() => window.open("tel:+306976846526")}
             className="hidden lg:flex text-sm px-4 py-2 whitespace-nowrap"
           >
             Επικοινωνήστε Μαζί Μας
