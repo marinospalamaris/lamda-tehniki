@@ -22,8 +22,8 @@ const FloatingContactButton = () => {
     }
 
     const subjectText = urgent
-      ? "[ΕΠΕΙΓΟΝ] Αίτημα Callback από LOVABLE.dev"
-      : "Αίτημα Callback από LOVABLE.dev";
+      ? "[ΕΠΕΙΓΟΝ] Αίτημα Callback από Νέος πελατης"
+      : "Αίτημα Callback από Νέος πελατις";
     const subject = encodeURIComponent(subjectText);
 
     const bodyLines = [
