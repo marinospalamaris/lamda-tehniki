@@ -44,18 +44,6 @@ const FloatingContactButton = () => {
           >
             Ζητήστε call back 📧
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => {
-              window.open("sms:+3069768466526?body=Χρειάζομαι%20τεχνική%20υποστήριξη.%20Παρακαλώ%20καλέστε%20με%20το%20συντομότερο.");
-              setIsExpanded(false);
-            }}
-            className="w-full"
-          >
-            <MessageCircle className="h-4 w-4 mr-2" />
-            Στείλτε SMS και θα σας καλέσουμε 📞
-          </Button>
         </div>
       )}
       
