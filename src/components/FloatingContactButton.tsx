@@ -1,30 +1,48 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 const FloatingContactButton = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [phone, setPhone] = useState("");
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const sendCallbackEmail = () => {
+    if (!phone.trim()) {
+      alert("Παρακαλώ εισάγετε το τηλέφωνό σας.");
+      return;
     }
+    const subject = encodeURIComponent("Αίτημα Callback από LOVABLE.dev");
+    const body = encodeURIComponent("Παρακαλώ καλέστε με στο τηλέφωνο: " + phone);
+    window.location.href = `mailto:michalislokoshs@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
     <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
       {/* Expanded options */}
       {isExpanded && (
-        <div className="flex flex-col gap-2 animate-fade-in">
+        <div className="flex flex-col gap-3 animate-fade-in bg-background p-4 rounded-lg shadow-strong border max-w-80">
+          <div className="space-y-2">
+            <Label htmlFor="phone-input" className="text-sm font-medium">
+              Το τηλέφωνό σας (για callback):
+            </Label>
+            <Input
+              id="phone-input"
+              type="tel"
+              placeholder="+30 69XXXXXXXX"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full"
+            />
+          </div>
           <Button
-            variant="secondary"
+            variant="default"
             size="sm"
-            onClick={() => window.open("tel:+30-697-684-6526")}
-            className="shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
+            onClick={sendCallbackEmail}
+            className="w-full"
           >
-            <Phone className="h-4 w-4 mr-2" />
-            Κλήση
+            Ζητήστε call back 📧
           </Button>
           <Button
             variant="outline"
@@ -33,7 +51,7 @@ const FloatingContactButton = () => {
               window.open("sms:+3069768466526?body=Χρειάζομαι%20τεχνική%20υποστήριξη.%20Παρακαλώ%20καλέστε%20με%20το%20συντομότερο.");
               setIsExpanded(false);
             }}
-            className="shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
+            className="w-full"
           >
             <MessageCircle className="h-4 w-4 mr-2" />
             Στείλτε SMS και θα σας καλέσουμε 📞
