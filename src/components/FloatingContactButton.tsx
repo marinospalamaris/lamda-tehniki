@@ -1,20 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 const FloatingContactButton = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [fullname, setFullname] = useState("");
   const [phone, setPhone] = useState("");
+  const [urgent, setUrgent] = useState(false);
 
   const sendCallbackEmail = () => {
+    if (!fullname.trim()) {
+      alert("Παρακαλώ εισάγετε το ονοματεπώνυμό σας.");
+      return;
+    }
     if (!phone.trim()) {
       alert("Παρακαλώ εισάγετε το τηλέφωνό σας.");
       return;
     }
-    const subject = encodeURIComponent("Αίτημα Callback από LOVABLE.dev");
-    const body = encodeURIComponent("Παρακαλώ καλέστε με στο τηλέφωνο: " + phone);
+
+    const subjectText = urgent
+      ? "[ΕΠΕΙΓΟΝ] Αίτημα Callback από LOVABLE.dev"
+      : "Αίτημα Callback από LOVABLE.dev";
+    const subject = encodeURIComponent(subjectText);
+
+    const bodyLines = [
+      "Ονοματεπώνυμο: " + fullname,
+      "Τηλέφωνο: " + phone,
+      "Επείγον: " + (urgent ? "Ναι" : "Όχι")
+    ];
+    const body = encodeURIComponent(bodyLines.join("\n"));
+
     window.location.href = `mailto:michalislokoshs@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -23,6 +41,19 @@ const FloatingContactButton = () => {
       {/* Expanded options */}
       {isExpanded && (
         <div className="flex flex-col gap-3 animate-fade-in bg-background p-4 rounded-lg shadow-strong border max-w-80">
+          <div className="space-y-2">
+            <Label htmlFor="fullname-input" className="text-sm font-medium">
+              Ονοματεπώνυμο:
+            </Label>
+            <Input
+              id="fullname-input"
+              type="text"
+              placeholder="π.χ. Γιάννης Παπαδόπουλος"
+              value={fullname}
+              onChange={(e) => setFullname(e.target.value)}
+              className="w-full"
+            />
+          </div>
           <div className="space-y-2">
             <Label htmlFor="phone-input" className="text-sm font-medium">
               Το τηλέφωνό σας (για callback):
@@ -35,6 +66,16 @@ const FloatingContactButton = () => {
               onChange={(e) => setPhone(e.target.value)}
               className="w-full"
             />
+          </div>
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id="urgent-checkbox"
+              checked={urgent}
+              onCheckedChange={(checked) => setUrgent(checked === true)}
+            />
+            <Label htmlFor="urgent-checkbox" className="text-sm font-medium">
+              Επείγον αίτημα
+            </Label>
           </div>
           <Button
             variant="default"
