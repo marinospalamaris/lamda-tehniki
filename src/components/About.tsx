@@ -158,7 +158,7 @@ const About = () => {
                 Επικοινωνήστε μαζί μας για δωρεάν εκτίμηση και συμβουλές
               </p>
               <div className="text-lg font-semibold">
-                📧 info@lamdatehniki.gr
+                📧 michalislokoshs@gmail.com
               </div>
             </Card>
           </div>

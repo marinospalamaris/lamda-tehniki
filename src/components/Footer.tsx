@@ -112,7 +112,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 mt-0.5 text-accent" />
                 <div>
-                  <p className="font-medium">info@lamdatehniki.gr</p>
+                  <p className="font-medium">michalislokoshs@gmail.com</p>
                   <p className="text-sm text-primary-foreground/80">Απαντάμε σε 2 ώρες</p>
                 </div>
               </div>

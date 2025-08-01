@@ -23,7 +23,7 @@ const Contact = () => {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
       details: [
-        "info@lamdatehniki.gr"
+        "michalislokoshs@gmail.com"
       ],
       note: "Απαντάμε εντός 2 ωρών"
     },
