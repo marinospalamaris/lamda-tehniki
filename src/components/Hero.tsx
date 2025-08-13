@@ -26,7 +26,7 @@ const Hero = () => {
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Επαγγελματικές
             <span className="text-primary-light block leading-relaxed py-2">
-              Υδραυλικές Εργασίες
+              Υδραυλικές Εργασίες στον Πειραιά
             </span>
           </h2>
           
