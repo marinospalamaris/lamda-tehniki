@@ -23,7 +23,7 @@ const Contact = () => {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
       details: [
-        "marinospalamaris@gmail.com"
+        "michalislokoshs@gmail.com"
       ],
       note: "Απαντάμε εντός 2 ωρών"
     },
@@ -76,8 +76,6 @@ const Contact = () => {
                     {info.details.map((detail, detailIndex) => (
                       info.title === "Τηλέφωνο" ? (
                        <a key={detailIndex} href="tel:+30-697-684-6526" className="font-medium hover:text-primary transition-colors">697 684 6526</a>
-                      ) : info.title === "Email" ? (
-                        <a key={detailIndex} href="mailto:marinospalamaris@gmail.com" className="font-medium hover:text-primary transition-colors">{detail}</a>
                       ) : (
                         <p key={detailIndex} className="font-medium">{detail}</p>
                       )

@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:flex items-center gap-2 text-muted-foreground">
               <Mail className="h-4 w-4" />
-              <a href="mailto:marinospalamaris@gmail.com" className="text-xs md:text-sm hover:text-primary transition-colors">marinospalamaris@gmail.com</a>
+              <span className="text-xs md:text-sm">michalislokoshs@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
