@@ -158,7 +158,7 @@ const About = () => {
                 Επικοινωνήστε μαζί μας για δωρεάν εκτίμηση και συμβουλές
               </p>
               <div className="text-lg font-semibold">
-                📧 michalislokoshs@gmail.com
+                📧 <a href="mailto:marinospalamaris@gmail.com" className="hover:text-accent-foreground/80 transition-colors">marinospalamaris@gmail.com</a>
               </div>
             </Card>
           </div>

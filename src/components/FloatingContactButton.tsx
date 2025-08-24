@@ -33,7 +33,7 @@ const FloatingContactButton = () => {
     ];
     const body = encodeURIComponent(bodyLines.join("\n"));
 
-    window.location.href = `mailto:michalislokoshs@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:marinospalamaris@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
